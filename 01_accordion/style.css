@@ -1,0 +1,110 @@
+body {
+  box-sizing: border-box;
+  padding: 32px 200px;
+}
+
+h1,
+h2 {
+  font-family: "Fraunces", serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+h1 {
+  font-size: 56px;
+  padding: 40px 0;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+li,
+p {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+p {
+  text-align: center;
+}
+
+li {
+  padding: 10px 20px;
+  margin: 0 100px;
+}
+
+.container h1 {
+  margin: 0;
+  line-height: 2;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.item {
+  float: left;
+  display: block;
+  width: 100%;
+}
+
+.collapse .labelItem:before {
+  content: "+";
+}
+
+.labelItem:before {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #666666;
+  font-weight: lighter;
+  font-size: 24px;
+  float: right;
+  padding: 20px;
+}
+
+.default .labelItem:before {
+  content: "-";
+  font-family: "Noto Sans TC", sans-serif;
+  color: #666666;
+  font-weight: lighter;
+  font-size: 24px;
+  float: right;
+  padding: 20px;
+}
+
+.labelItem {
+  border-top: 1px solid #cccccc;
+  cursor: pointer;
+  color: #666666;
+  width: 100%;
+}
+
+.collapse .itemContent {
+  height: 0px;
+  transition: height 1s;
+  transform: scaleY(0);
+  float: left;
+  display: block;
+}
+.content {
+  padding: 0 40px 40px 40px;
+}
+.default .itemContent {
+  width: 90%;
+  width: calc(100% - 20px);
+  margin: 0px auto 4px;
+  padding: 0 20px;
+  display: block;
+  transition: 2s ease;
+  box-sizing: border-box;
+  color: #666666;
+}
+
+.default .labelItem {
+  margin: 0px;
+  color: #000;
+}

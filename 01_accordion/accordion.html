@@ -1,0 +1,131 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components: accordion</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Noto+Sans+TC:wght@100;300&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>SOLID</h1>
+      <div class="item default">
+        <div class="labelItem">
+          <h2>Single responsibility principle</h2>
+        </div>
+        <div class="itemContent">
+            <div class="content">
+                <p>
+                    The single-responsibility principle (SRP) is a computer-programming
+                    principle that states that every class in a computer program should
+                    have responsibility over a single part of that program's
+                    functionality, which it should encapsulate. All of that module,
+                    class or function's services should be narrowly aligned with that
+                    responsibility.[1]
+                  </p>
+                  <p>
+                    Robert C. Martin, the originator of the term, expresses the
+                    principle as, "A class should have only one reason to change,"[1]
+                    although, because of confusion around the word "reason" he more
+                    recently stated "This principle is about people."[2]
+                  </p>
+            </div> 
+        </div>
+      </div>
+      <div class="item collapse">
+        <div class="labelItem"><h2>Open/closed principle</h2></div>
+        <div class="itemContent">
+            <div class="content">
+                <p>
+                    In object-oriented programming, the open–closed principle states
+                    "software entities (classes, modules, functions, etc.) should be
+                    open for extension, but closed for modification";[1] that is, such
+                    an entity can allow its behaviour to be extended without modifying
+                    its source code.
+                  </p>
+                  <p>
+                    The name open–closed principle has been used in two ways. Both ways
+                    use generalizations (for instance, inheritance or delegate
+                    functions) to resolve the apparent dilemma, but the goals,
+                    techniques, and results are different.
+                  </p>
+            </div>
+        </div>
+      </div>
+      <div class="item collapse">
+        <div class="labelItem"><h2>Liskov substitution principle</h2></div>
+        <div class="itemContent">
+            <div class="content">
+                <p>
+                    Substitutability is a principle in object-oriented programming
+                    stating that, in a computer program, if S is a subtype of T, then
+                    objects of type T may be replaced with objects of type S (i.e., an
+                    object of type T may be substituted with any object of a subtype S)
+                    without altering any of the desirable properties of the program
+                    (correctness, task performed, etc.). More formally, the Liskov
+                    substitution principle (LSP) is a particular definition of a
+                    subtyping relation, called (strong) behavioral subtyping, that was
+                    initially introduced by Barbara Liskov in a 1987 conference keynote
+                    address titled Data abstraction and hierarchy. It is a semantic
+                    rather than merely syntactic relation, because it intends to
+                    guarantee semantic interoperability of types in a hierarchy, object
+                    types in particular. 
+                
+                  </p>
+            </div>
+         
+        </div>
+      </div>
+      <div class="item collapse">
+        <div class="labelItem"><h2>Interface segregation principle</h2></div>
+        <div class="itemContent">
+            <div class="content">
+                <p>
+                    In the field of software engineering, the interface-segregation
+                    principle (ISP) states that no client should be forced to depend on
+                    methods it does not use.[1] ISP splits interfaces that are very
+                    large into smaller and more specific ones so that clients will only
+                    have to know about the methods that are of interest to them. Such
+                    shrunken interfaces are also called role interfaces.[2] ISP is
+                    intended to keep a system decoupled and thus easier to refactor,
+                    change, and redeploy. ISP is one of the five SOLID principles of
+                    object-oriented design, similar to the High Cohesion Principle of
+                    GRASP.[3]
+                  </p>
+            </div>
+        </div>
+      </div>
+      <div class="item collapse">
+        <div class="labelItem"><h2>Dependency inversion principle</h2></div>
+        <div class="itemContent">
+            <div class="content">
+                <p>
+                    In object-oriented design, the dependency inversion principle is a
+                    specific form of decoupling software modules. When following this
+                    principle, the conventional dependency relationships established
+                    from high-level, policy-setting modules to low-level, dependency
+                    modules are reversed, thus rendering high-level modules independent
+                    of the low-level module implementation details. The principle
+                    states:
+                    <ul>
+                        <li>High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g., interfaces).</li>
+                        <li>Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.</li>
+                    </ul>
+                  </p>
+                  <p>
+                    By dictating that both high-level and low-level objects must depend
+                    on the same abstraction, this design principle inverts the way some
+                    people may think about object-oriented programming.[2]
+                  </p>
+            </div>
+         
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

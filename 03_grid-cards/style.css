@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Shippori Mincho', serif;
+  background-color: #f5f0ef;
+}
+p,
+small {
+  line-height: 1.5;
+}
+
+p{
+  font-family: 'Shippori Mincho', serif;
+}
+
+.container {
+  margin: 40px;
+}
+
+.card {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 0 10px #d5d4d47b;
+  border-radius: 10px;
+  background-color: white
+}
+
+.card:hover{
+  box-shadow: 5px 5px 20px #bbbbbb;
+  transition: 0.3s;
+}
+
+.author a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 10px;
+  color:#1ac0c6;
+  font-weight: 600;
+}
+
+.author a:hover{
+  color: #16989c;
+}
+
+.author img {
+  width: 40px;
+  padding-right: 10px;
+}
+
+.content {
+  display: flex;
+}
+
+.content .text {
+  width: 80%;
+  padding-right: 10px;
+}
+
+.tags {
+  padding: 10px 0;
+}
+
+ul.tags li {
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+  padding: 4px 8px;
+  background-color: #1ac0c6;
+  border-radius: 5px;
+  font-size: 14px; 
+}
+
+ul.tags li:hover{
+  background-color: #16989c;
+}
+
+.image img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.actions a {
+  float: right;
+  cursor: pointer;
+  color:#1ac0c6;
+}
+
+.actions a:hover{
+  color: #16989c;
+}
+
+.actions small {
+  opacity: 0.3;
+}
+
+#selected {
+  display: none;
+}
+#default {
+  display: block;
+}
+
